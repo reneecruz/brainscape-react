@@ -17,8 +17,7 @@ body, html {
 
 }
 
-
-nav.navbar {
+.navbar {
   overflow: hidden;
   background-color: #333;
   opacity: .7; 
@@ -28,7 +27,7 @@ nav.navbar {
   justify-content:center;
 }
 
-nav.navbar a {
+.navbar a {
   float: left;
   font-size: 16px;
   color: white;
@@ -37,7 +36,7 @@ nav.navbar a {
   text-decoration: none;
 }
 
-nav.dropdown {
+.dropdown {
   float: left;
   overflow: hidden;
 }
