@@ -12,7 +12,7 @@ const Nav = () => {
             <Link to="/pricing">Pricing</Link>
 
             <Link to="/about-us">About Us</Link>
-            <Link to="/" onClick={null}>Login</Link>          
+            <Link to="/login" onClick={null}>Login</Link>          
 
         </nav>
        
