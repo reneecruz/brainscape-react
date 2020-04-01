@@ -1,4 +1,4 @@
-/* 
+
 html,
 body,
 #root {
@@ -6,7 +6,7 @@ body,
   padding: 0;
   font-family: 'Open-Sans', sans-serif;
   height: 100%;
-} */
+}
 
 body {
   margin: 0;

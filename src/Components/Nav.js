@@ -5,7 +5,8 @@ const Nav = () => {
     
     return (
         <>
-        <nav id="nav" style={{ display: 'flex', justifyContent: 'center', position: 'sticky' }}>
+        <nav className="navbar">
+        {/* style={{ display: 'flex', justifyContent: 'center', position: 'sticky' }} */}
             <Link to="/">Home</Link>  
             <div className="dropdown">
             <Link to="/the-experience" className="dropbtn">The Experience</Link>

@@ -1,15 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 body, html {
-  /* height: 100%;
-  margin: 0; */
+  height: 100%;
+  margin: 0;
   background-image: url("./background.jpg");
 
 
@@ -26,43 +17,32 @@ body, html {
 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-/* Style the navbar */
- #nav {
+nav.navbar {
   overflow: hidden;
-  background-color: #333; 
-  position: fixed;
-    top: 0;
-    transition: all 0.2s ease;
-    width: 100%;
-    z-index: 6;
+  background-color: #333;
+  opacity: .7; 
+  font-family: 'Open-Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 
-/* Navbar links */
- #nav a {
+nav.navbar a {
   float: left;
-  display: block;
-  color: #f2f2f2;
+  font-size: 16px;
+  color: white;
   text-align: center;
-  padding: 14px;
+  padding: 14px 16px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-#nav a:hover {
-  background-color: black;
-}
-
-
-.dropdown {
+nav.dropdown {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+nav.dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;  
   border: none;
@@ -74,7 +54,7 @@ body, html {
   margin: 0;
 }
 
-.dropdown:hover .dropbtn, .dropbtn:focus {
+nav.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: black; 
 }
 
@@ -82,6 +62,7 @@ body, html {
   display: block;
   position: absolute;
   background-color: #333;
+  opacity: .7;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -99,7 +80,6 @@ body, html {
 .dropdown-content a:hover {
   background-color: black;
 }
-
 
 .constellation {
   font-size: xx-large;
