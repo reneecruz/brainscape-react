@@ -6,8 +6,7 @@ const Login = (props) => {
         return (
             
             <>
-            <div className="content">
-            </div>
+            
             </>
         )
 }

@@ -8,14 +8,10 @@ const App = () => {
 
   return (
     <>
-    
       <Router>
         <Nav />
         <Routes />
       </Router>
-
-      <header className="App-header">
-             </header>
     </>
   );
 }
