@@ -5,12 +5,12 @@ const TheExperience = () => {
         
     return (
         <>
-      <div className="drop-content">
-        <NavLink to="/">Aurora Borealis</NavLink>
-        <NavLink to="/constellation">Constellation</NavLink>
-        <NavLink to="/">Earth Orbit</NavLink>
-        <NavLink to="/">EVA</NavLink>
-      </div>        
+        {/* <div className="dropdown-content">
+            <NavLink to="/">Aurora Borealis</NavLink>
+            <NavLink to="/constellation">Constellation</NavLink>
+            <NavLink to="/">Earth Orbit</NavLink>
+            <NavLink to="/">EVA</NavLink>
+        </div>         */}
         </>
     )
 }

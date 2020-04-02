@@ -1,8 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Nav = () => {
-    
+
+const [toggleState, setToggleState] = useState("none");
+
+const toggle = () => {
+    setToggleState(toggleState === "none" ? "block" : "none");
+  }
+
     return (
     <>
     <nav>
@@ -14,11 +21,12 @@ const Nav = () => {
         
         <li class="dropdown">
 
-        <a href="javascript:void(0)" class="dropbtn">The Experience</a>
-            
-            <div class="dropdown-content">
+        <Link to="/the-experience" onClick={toggle} >The Experience</Link>
+
+        {/* <a href="javascript:void(0)" class="dropbtn">The Experience</a> */}
+            <div class="dropdown-content" style={{ display: toggleState }}>
                 <NavLink to="/">Aurora Borealis</NavLink>
-                <NavLink to="/constellation">Constellation</NavLink>
+                <NavLink to="/constellation" onClick={toggle}>Constellation</NavLink>
                 <NavLink to="/">Earth Orbit</NavLink>
                 <NavLink to="/">EVA</NavLink>
             </div>
@@ -26,7 +34,7 @@ const Nav = () => {
 
         <li><NavLink to="/about-us">About Us</NavLink></li>
         <li><NavLink to="/login" onClick={null}>Login</NavLink></li>
-        
+
     </ul>
 
     </nav>
