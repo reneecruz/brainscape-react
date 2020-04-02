@@ -17,8 +17,8 @@ const toggle = () => {
 
     <ul>
 
-        <li><NavLink to="/" onClick={() => setNoneState("none")}>Home</NavLink></li>
-        <li><NavLink to="/pricing" onClick={() => setNoneState("none")}>Pricing</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/pricing">Pricing</NavLink></li>
         
         <li class="dropdown">
 
@@ -26,15 +26,15 @@ const toggle = () => {
 
         {/* <a href="javascript:void(0)" class="dropbtn">The Experience</a> */}
             <div class="dropdown-content" style={{ display: toggleState }}>
-                <NavLink to="/" onClick={() => setNoneState("none")}>Aurora Borealis</NavLink>
+                <NavLink to="/">Aurora Borealis</NavLink>
                 <NavLink to="/constellation" onClick={toggle}>Constellation</NavLink>
-                <NavLink to="/" onClick={() => setNoneState("none")}>Earth Orbit</NavLink>
-                <NavLink to="/" onClick={() => setNoneState("none")}>EVA</NavLink>
+                <NavLink to="/">Earth Orbit</NavLink>
+                <NavLink to="/">EVA</NavLink>
             </div>
         </li>
 
-        <li><NavLink to="/about-us" onClick={() => setNoneState("none")}>About Us</NavLink></li>
-        <li><NavLink to="/login" onClick={() => setNoneState("none")}>Login</NavLink></li>
+        <li><NavLink to="/about-us">About Us</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
 
     </ul>
 
