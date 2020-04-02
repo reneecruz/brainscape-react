@@ -1,18 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const TheExperience = () => {
         
     return (
         <>
-      
-       <div class="dropdown-content" id="myDropdown">
-            <Link to="/" className="">Aurora Borealis</Link>
-            <Link to="/constellation" className="">Constellation</Link>
-            <Link to="/"className="">Earth Orbit</Link>
-            <Link to="/"className="">EVA</Link>
-        </div>
-      
+      <div className="drop-content">
+        <NavLink to="/">Aurora Borealis</NavLink>
+        <NavLink to="/constellation">Constellation</NavLink>
+        <NavLink to="/">Earth Orbit</NavLink>
+        <NavLink to="/">EVA</NavLink>
+      </div>        
         </>
     )
 }

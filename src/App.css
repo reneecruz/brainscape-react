@@ -1,64 +1,61 @@
 body, html {
   height: 100%;
   margin: 0;
-  background-image: url("./background.jpg");
-
-
-    /* Background image is centered vertically and horizontally at all times */ 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-color: #464646; 
-    /* Font Colour */ 
-    color:white; 
-    /* Font Family */
-    font-family: 'Open Sans', sans-serif;
-
+  background-image: url("./background.jpg"); 
+  /* Background image is centered vertically and horizontally at all times */ 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  /* Font Color */ 
+  color:white; 
+  /* Font Family */
+  font-family: 'Open Sans', sans-serif;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  opacity: .7; 
-  font-family: 'Open-Sans', sans-serif;
+ nav {
+
+  position: absolute;
+  left: 0px;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content:center;
+  justify-content: center;
+  background-color: #333;
+  opacity: .7;
 }
 
-.navbar a {
+/* Nav Styles and Dropdown */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: .7;
+}
+
+li {
   float: left;
-  font-size: 16px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
 }
 
-nav.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: #333;
-  font-family: inherit;
-  margin: 0;
-}
-
-nav.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: black; 
+li.dropdown {
+  display: inline-block;
 }
 
 .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
   background-color: #333;
   opacity: .7;
@@ -68,7 +65,6 @@ nav.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
 }
 
 .dropdown-content a {
-  float: none;
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -76,9 +72,13 @@ nav.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: black;
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+
+/* Styling for Constellation Text */
 
 .constellation {
   font-size: xx-large;
